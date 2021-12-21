@@ -1,5 +1,13 @@
-Make a list of email addresses suitable for surveying all Toolforge
+Make a list of usernames suitable for surveying all Toolforge
 maintainers + Cloud VPS project admins.
+
+$ python3 make-toolforge-user-list.py > users.txt
+$ python3 make-cloudvps-user-list.py >> users.txt
+$ sort users.txt | uniq > all-users-sorted.txt
+
+
+Make a list of email addresses instead (not sure what this is
+for but it's supported!)
 
 $ python3 make-toolforge-email-list.py > emails.txt
 $ python3 make-cloudvps-email-list.py >> emails.txt
